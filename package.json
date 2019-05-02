@@ -1,0 +1,29 @@
+{
+  "name": "salsa-picante",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watch make",
+    "develop": "browser-sync start -s -f index.html index.js main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/logalleon/salsa-picante.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/logalleon/salsa-picante/issues"
+  },
+  "homepage": "https://github.com/logalleon/salsa-picante#readme",
+  "dependencies": {
+    "@types/react": "^16.8.15",
+    "@types/react-dom": "^16.8.4",
+    "browser-sync": "^2.26.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
