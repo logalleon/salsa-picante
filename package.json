@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "watch make",
-    "develop": "browser-sync start -s -f index.html index.js main.css"
+    "dev": "browser-sync start -s -f dist/index.js index.html",
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --config webpack.config.js --watch"
   },
   "repository": {
     "type": "git",
@@ -20,10 +21,22 @@
   },
   "homepage": "https://github.com/logalleon/salsa-picante#readme",
   "dependencies": {
-    "@types/react": "^16.8.15",
-    "@types/react-dom": "^16.8.4",
+    "@types/lodash": "^4.14.169",
+    "@types/styled-components": "^5.1.9",
     "browser-sync": "^2.26.5",
+    "lodash": "^4.17.21",
+    "ossuary": "^1.1.10",
+    "preact": "^10.5.13",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.14.6",
+    "@types/react-dom": "^16.9.13",
+    "file-loader": "^6.2.0",
+    "ts-loader": "^9.2.1",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
   }
 }
